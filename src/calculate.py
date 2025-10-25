@@ -1,8 +1,7 @@
-from typing import List
 from src.errors import *
 
 
-def tokenize_rpn(raw_input: str) -> List[str]:
+def tokenize_rpn(raw_input: str) -> list[str]:
     """Разбивает строку(выражение) на список токенов(чисел и операторов)
 
     Допустимые операторы:
@@ -74,7 +73,7 @@ def tokenize_rpn(raw_input: str) -> List[str]:
     return tokens
 
 
-def evaluate_rpn(tokens: List[str]) -> float:
+def evaluate_rpn(tokens: list[str]) -> float:
     """Вычисляет значение выражения.
     Используется стек:
     1)Сначала числа кладутся в список.
